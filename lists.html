@@ -3,6 +3,25 @@
     <head>
         <title>HTML Lists</title>
         <link rel="icon" href="/images/favicon (1).ico">
+        <style>
+            .ulh{
+                overflow: hidden;
+                list-style-type: none;
+                background-color: rgb(131, 127, 127);
+            }
+            .lih{
+                text-decoration: none;
+                float: left;
+                margin-right:5%;
+                margin-left: 5%;
+                margin-top: 10px ;
+                margin-bottom: 10px;
+                color: rgb(255, 255, 255);
+            }
+            .lih a{
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
         <h1>HTML Lists</h1>
@@ -55,6 +74,15 @@
                 </ul>
             </li>
             <li>grey</li>
+        </ul>
+        <hr>
+        <h1>Horizontal list</h1>
+        <p>we have an example for navigation menu below</p>
+        <ul class="ulh">
+            <li><a href="index.html" class="lih">Home</a></li>
+            <li><a href="computer.html" class="lih">computer</a></li>
+            <li><a href="coffee.html" class="lih">coffee</a></li>
+            <li><a href="colors.html" class="lih">colors</a></li>
         </ul>
         <hr>
         <h1>Ordered HTML List</h1>
@@ -110,5 +138,6 @@
             <dt>green</dt>
             <dd>some people like green</dd>
         </dl>
+        
     </body>
 </html>

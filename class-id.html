@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HTML class and Id Attribute</title>
+        <link rel="icon" href="/images/favicon (1).ico">
+        <style>
+            .cl{
+                color: rgb(131, 5, 131);
+            }
+            .cla{
+                color: blue;
+            }
+            .clm{
+                background-color: rgba(138, 50, 221,0.2);
+            }
+            #ci{
+                color: rgb(165, 42, 114);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>HTML class Attribute</h1>
+        <p>The HTML class attribute is used to specify a class for an HTML element. we used class to color headings in example below</p>
+        <h2 class="cl">Paris</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut ea alias impedit, accusantium, temporibus cupiditate itaque corporis veritatis eum nam tempore similique tenetur quam voluptatum dolorem id ut omnis! Corrupti?</p>
+        <h2 class="cl">Rome</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut ea alias impedit, accusantium, temporibus cupiditate itaque corporis veritatis eum nam tempore similique tenetur quam voluptatum dolorem id ut omnis! Corrupti?</p>
+        <h2 class="cl">London</h2>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut ea alias impedit, accusantium, temporibus cupiditate itaque corporis veritatis eum nam tempore similique tenetur quam voluptatum dolorem id ut omnis! Corrupti?</p>
+        <hr>
+        <h1>Multiple Classes</h1>
+        <p>in the example below multiple classes were used</p>
+        <h2 class="cla clm">Paris</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut ea alias impedit, accusantium, temporibus cupiditate itaque corporis veritatis eum nam tempore similique tenetur quam voluptatum dolorem id ut omnis! Corrupti?</p>
+        <h2 class="cla">Rome</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut ea alias impedit, accusantium, temporibus cupiditate itaque corporis veritatis eum nam tempore similique tenetur quam voluptatum dolorem id ut omnis! Corrupti?</p>
+        <h2 class="cla">London</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut ea alias impedit, accusantium, temporibus cupiditate itaque corporis veritatis eum nam tempore similique tenetur quam voluptatum dolorem id ut omnis! Corrupti?</p>
+        <hr>
+        <h1>Use of The class Attribute in JavaScript</h1>
+        <p>there is a example below for using class in java script. click the button to hide the city names</p>
+        <h2 class="clj">Paris</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut ea alias impedit, accusantium, temporibus cupiditate itaque corporis veritatis eum nam tempore similique tenetur quam voluptatum dolorem id ut omnis! Corrupti?</p>
+        <h2 class="clj">Rome</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut ea alias impedit, accusantium, temporibus cupiditate itaque corporis veritatis eum nam tempore similique tenetur quam voluptatum dolorem id ut omnis! Corrupti?</p>
+        <h2 class="clj">London</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut ea alias impedit, accusantium, temporibus cupiditate itaque corporis veritatis eum nam tempore similique tenetur quam voluptatum dolorem id ut omnis! Corrupti?</p>
+        <button type="button" onclick="hidecity()">Hide city names</button>
+        <hr>
+        <h1>HTML id Attribute</h1>
+        <p>The HTML id attribute is used to specify a unique id for an HTML element. You cannot have more than one element with the same id in an HTML document. in the example below we changeed paris text color with id and css</p>
+        <h2 id="ci">Paris</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut ea alias impedit, accusantium, temporibus cupiditate itaque corporis veritatis eum nam tempore similique tenetur quam voluptatum dolorem id ut omnis! Corrupti?</p>
+        <h2>Rome</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut ea alias impedit, accusantium, temporibus cupiditate itaque corporis veritatis eum nam tempore similique tenetur quam voluptatum dolorem id ut omnis! Corrupti?</p>
+        <h2>London</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut ea alias impedit, accusantium, temporibus cupiditate itaque corporis veritatis eum nam tempore similique tenetur quam voluptatum dolorem id ut omnis! Corrupti?</p>
+        <hr>
+        <h1>Using The id Attribute in JavaScript</h1>
+        <p>there is an example for using id in javascript below click the button to change the text to Hi.</p>
+        <h3 id="hb">This text will change if you click the button</h3>
+        <button type="button" onclick="changehi()">change text</button>
+        <script>
+            function hidecity(){
+                var x = document.getElementsByClassName("clj");
+            
+            for(var i=0; i < x.length; i++){
+                x[i].style.display="none";
+            }
+        }
+        function changehi(){
+            document.getElementById("hb").innerHTML="Hi"
+        }
+        </script>
+    </body>
+</html>

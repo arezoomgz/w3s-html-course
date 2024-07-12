@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HTML Div Element</title>
+        <link rel="icon" href="/images/favicon (1).ico">
+        <style>
+            .containerf{
+                width: 100%;
+            }
+            .containerf div{
+                width: 33%;
+                float: left;
+                height: 350px;
+            }
+            .containerib div{
+                width: 30%;
+                display: inline-block;
+            }
+            .containerflex{
+                display: flex;
+            }
+            .containerflex div{
+                width: 33%;
+            }
+            .containerg{
+                display: grid;
+                grid-template-columns: 33% 33% 33%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>HTML Div Element</h1>
+        <p>The div element is by default a block element, meaning that it takes all available width, and comes with line breaks before and after.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam excepturi, laborum praesentium <div style="background-color: rgba(158, 72, 238,0.5);">This is a div</div> aliquid ab ut expedita aut architecto atque molestias fuga vitae eligendi eaque officiis id fugiat! Animi, facere cum!</p>
+        <hr>
+        <h1><div> Div as a container</h1>
+        <p>The div element is often used to group sections of a web page together.</p>
+        <div style="background-color: rgba(155, 72, 238,0.5);">
+            <h2>Paris</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, delectus incidunt? Libero odit culpa perferendis dolorum nam, mollitia aut provident quidem eum, delectus quas a placeat laudantium officiis itaque molestiae!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores magnam sapiente quo repellendus eligendi ratione doloremque dolorum, repellat temporibus nemo inventore magni maiores non ex repudiandae vero dolorem at. In.</p>
+        </div>
+        <hr>
+        <h1>Center align a div element</h1>
+        <p>If you have a div element that is not 100% wide, and you want to center-align it, set the CSS margin property to auto.</p>
+        <div style="background-color: rgba(155, 72, 238,0.5); width: 320px; margin: auto;">
+            <h2>Paris</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, delectus incidunt? Libero odit culpa perferendis dolorum nam, mollitia aut provident quidem eum, delectus quas a placeat laudantium officiis itaque molestiae!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores magnam sapiente quo repellendus eligendi ratione doloremque dolorum, repellat temporibus nemo inventore magni maiores non ex repudiandae vero dolorem at. In.</p>
+        </div>
+        <hr>
+        <h1>Multiple div elements</h1>
+        <div style="background-color: rgba(155, 72, 238,0.5);">
+            <h2>Paris</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, veritatis sit fuga modi, cupiditate ea explicabo aspernatur minus minima officia, eum molestiae perferendis. Voluptatem amet necessitatibus natus eius, enim nemo?</p>
+        </div>
+        <div style="background-color: rgba(192, 5, 5, 0.5);">
+            <h2>London</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur doloremque, omnis obcaecati, perferendis consequuntur soluta consequatur maiores repellendus dolore illum aspernatur, id atque quis? Ratione placeat minus accusamus molestiae itaque.</p>
+        </div>
+        <div style="background-color: rgba(17, 85, 233, 0.5);">
+            <h2>Rome</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, asperiores cumque ex impedit voluptas blanditiis provident sed facere unde, assumenda hic veniam quidem saepe doloribus. Maiores nulla eius repudiandae vero?</p>
+        </div>
+        <hr>
+        <h1>Aligning div elements side by side</h1>
+        <p>When building web pages, you often want to have two or more div elements side by side.There are different methods for aligning elements side by side, all include some CSS styling. We will look at the most common methods</p>
+        <h2>Float</h2>
+        <p>The CSS float property was not originally meant to align div elements side-by-side, but has been used for this purpose for many years.</p>
+        <div class="containerf" style="margin-bottom: 400px;">
+            <div style="background-color: rgba(155, 72, 238,0.5);">
+                <h2>Paris</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, veritatis sit fuga modi, cupiditate ea explicabo aspernatur minus minima officia, eum molestiae perferendis. Voluptatem amet necessitatibus natus eius, enim nemo?</p>
+            </div>
+            <div style="background-color: rgba(192, 5, 5, 0.5);">
+                <h2>London</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur doloremque, omnis obcaecati, perferendis consequuntur soluta consequatur maiores repellendus dolore illum aspernatur, id atque quis? Ratione placeat minus accusamus molestiae itaque.</p>
+            </div>
+            <div style="background-color: rgba(17, 85, 233, 0.5);">
+                <h2>Rome</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, asperiores cumque ex impedit voluptas blanditiis provident sed facere unde, assumenda hic veniam quidem saepe doloribus. Maiores nulla eius repudiandae vero?</p>
+            </div>
+        </div>
+        <h1>Inline-block</h1>
+            <p>If you change the div element's display property from block to inline-block, the div elements will no longer add a line break before and after, and will be displayed side by side instead of on top of each other.</p>
+            <div class="containerib">
+                <div style="background-color: rgba(155, 72, 238,0.5);">
+                    <h2>Paris</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, veritatis sit fuga modi, cupiditate ea explicabo aspernatur minus minima officia, eum molestiae perferendis. Voluptatem amet necessitatibus natus eius, enim nemo?</p>
+                </div>
+                <div style="background-color: rgba(192, 5, 5, 0.5);">
+                    <h2>London</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur doloremque, omnis obcaecati, perferendis consequuntur soluta consequatur maiores repellendus dolore illum aspernatur, id atque quis? Ratione placeat minus accusamus molestiae itaque.</p>
+                </div>
+                <div style="background-color: rgba(17, 85, 233, 0.5);">
+                    <h2>Rome</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, asperiores cumque ex impedit voluptas blanditiis provident sed facere unde, assumenda hic veniam quidem saepe doloribus. Maiores nulla eius repudiandae vero?</p>
+                </div>
+            </div>
+            <h1>Flex</h1>
+            <p>The CSS Flexbox Layout Module was introduced to make it easier to design flexible responsive layout structure without using float or positioning.</p>
+            <div class="containerflex">
+                <div style="background-color: rgba(155, 72, 238,0.5);">
+                    <h2>Paris</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, veritatis sit fuga modi, cupiditate ea explicabo aspernatur minus minima officia, eum molestiae perferendis. Voluptatem amet necessitatibus natus eius, enim nemo?</p>
+                </div>
+                <div style="background-color: rgba(192, 5, 5, 0.5);">
+                    <h2>London</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur doloremque, omnis obcaecati, perferendis consequuntur soluta consequatur maiores repellendus dolore illum aspernatur, id atque quis? Ratione placeat minus accusamus molestiae itaque.</p>
+                </div>
+                <div style="background-color: rgba(17, 85, 233, 0.5);">
+                    <h2>Rome</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, asperiores cumque ex impedit voluptas blanditiis provident sed facere unde, assumenda hic veniam quidem saepe doloribus. Maiores nulla eius repudiandae vero?</p>
+                </div>
+            </div>
+            <h1>Grid</h1>
+            <p>The CSS Grid Layout Module offers a grid-based layout system, with rows and columns, making it easier to design web pages without having to use floats and positioning.</p>
+            <div class="containerg">
+                <div style="background-color: rgba(155, 72, 238,0.5);">
+                    <h2>Paris</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, veritatis sit fuga modi, cupiditate ea explicabo aspernatur minus minima officia, eum molestiae perferendis. Voluptatem amet necessitatibus natus eius, enim nemo?</p>
+                </div>
+                <div style="background-color: rgba(192, 5, 5, 0.5);">
+                    <h2>London</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur doloremque, omnis obcaecati, perferendis consequuntur soluta consequatur maiores repellendus dolore illum aspernatur, id atque quis? Ratione placeat minus accusamus molestiae itaque.</p>
+                </div>
+                <div style="background-color: rgba(17, 85, 233, 0.5);">
+                    <h2>Rome</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, asperiores cumque ex impedit voluptas blanditiis provident sed facere unde, assumenda hic veniam quidem saepe doloribus. Maiores nulla eius repudiandae vero?</p>
+                </div>
+    </body>
+</html>

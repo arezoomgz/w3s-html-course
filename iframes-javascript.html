@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HTML Iframes and JavaScript</title>
+        <link rel="icon" href="/images/favicon (1).ico">
+    </head>
+    <body>
+        <h1>HTML Iframes</h1>
+        <p>An HTML iframe is used to display a web page within a web page.</p>
+        <iframe src="div.html" frameborder="0" width="80%"></iframe>
+        <hr>
+        <h1>JavaScript</h1>
+        <p>JavaScript makes HTML pages more dynamic and interactive. there is an example below. click the button to see the date.</p>
+        <button type="button" onclick="document.getElementById('date1').innerHTML = Date()">show the date</button>
+        <p id="date1"></p>
+        <hr>
+        <h1>Using JavaScript to Change Text</h1>
+        <p>click on the button below to change text into Hi</p>
+        <p id="change1">Hello</p>
+        <button type="button" onclick="changetext()">change text</button>
+        <hr>
+        <h1>Changing style with help of javascript</h1>
+        <p>click on the button below to change the style</p>
+        <p id="style1">Hello</p>
+        <button type="button" onclick="changestyle()">change style</button>
+        <hr>
+        <h1>Another example for javascript</h1>
+        <p>with clicking on the buttons you can turn on or turn off the light</p>
+        <img id="lightimg" src="images/lights-off.jfif" width="400px">
+        <br>
+        <button type="button" onclick="light(0)" style="margin-right: 180px;">turn the light off</button>
+        <button type="button" onclick="light(1)">turn the light on</button>
+        <script>
+            function changetext(){
+                document.getElementById("change1").innerHTML="Hi";  
+            }
+            function changestyle(){
+                document.getElementById("style1").style.color="rgb(255,0,255)";
+                document.getElementById("style1").style.fontSize="40px";
+                document.getElementById("style1").style.backgroundColor="rgba(0,0,255,0.2)";
+            }
+            function light(sw){
+                var pic;
+                if(sw==0){
+                    pic = "/images/lights-off.jfif"
+                }else{
+                    pic="/images/lights-on.jfif"
+                }
+                document.getElementById("lightimg").src = pic;
+
+            }
+        </script>
+</html>

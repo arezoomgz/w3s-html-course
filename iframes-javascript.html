@@ -26,7 +26,7 @@
         <hr>
         <h1>Another example for javascript</h1>
         <p>with clicking on the buttons you can turn on or turn off the light</p>
-        <img id="lightimg" src="images/lights-off.jfif" width="400px">
+        <img id="lightimg" src="img-lights-off.png" width="400px">
         <br>
         <button type="button" onclick="light(0)" style="margin-right: 180px;">turn the light off</button>
         <button type="button" onclick="light(1)">turn the light on</button>
@@ -42,9 +42,9 @@
             function light(sw){
                 var pic;
                 if(sw==0){
-                    pic = "/images/lights-off.jfif"
+                    pic = "img-lights-off.png"
                 }else{
-                    pic="/images/lights-on.jfif"
+                    pic="img-lights-on.png"
                 }
                 document.getElementById("lightimg").src = pic;
 

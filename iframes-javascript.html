@@ -8,7 +8,7 @@
         <meta name="author" content="arezoo">
         <meta http-equiv="refresh" content="30">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="img-favicon (1).ico">
+        <link rel="icon" href="images/img-favicon (1).ico">
     </head>
     <body>
         <h1>HTML Iframes</h1>
@@ -32,7 +32,7 @@
         <hr>
         <h1>Another example for javascript</h1>
         <p>with clicking on the buttons you can turn on or turn off the light</p>
-        <img id="lightimg" src="img-lights-off.png" width="400px">
+        <img id="lightimg" src="images/img-lights-off.png" width="400px">
         <br>
         <button type="button" onclick="light(0)" style="margin-right: 180px;">turn the light off</button>
         <button type="button" onclick="light(1)">turn the light on</button>
@@ -48,9 +48,9 @@
             function light(sw){
                 var pic;
                 if(sw==0){
-                    pic = "img-lights-off.png"
+                    pic = "images/img-lights-off.png"
                 }else{
-                    pic="img-lights-on.png"
+                    pic="images/img-lights-on.png"
                 }
                 document.getElementById("lightimg").src = pic;
 

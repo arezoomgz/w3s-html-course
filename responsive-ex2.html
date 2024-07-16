@@ -56,11 +56,6 @@
             .about p{
                 text-align: justify;
             }
-            section::after{
-                content: "";
-                display: table;
-                clear: both;
-            }
             @media only screen and (max-width:800px){
                 .menu, .main, .about{
                     width: 100%;
@@ -69,28 +64,28 @@
         </style>
     </head>
     <body>
-        <header class="header">
+        <div class="header">
             <h1>Header</h1>
-        </header>
-        <section>
-        <div class="menu">
-            <a href="#">Paris</a>
-            <a href="#">London</a>
-            <a href="#">Los Angeles</a>
-            <a href="#">Canada</a>
-            <a href="#">Tokyo</a>
         </div>
-        <main class="main">
-            <h1>Paris</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nisi similique, tempore iure labore inventore tempora consequatur cum cupiditate eum quo vel quia adipisci ad quas, velit qui doloremque quam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, dolores voluptate velit iste porro commodi numquam fuga. Dolorum velit incidunt, quis tempore laboriosam commodi sapiente culpa inventore error dicta eius. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est placeat corporis reprehenderit, eaque laboriosam veritatis labore. Eveniet quasi, velit ipsam veniam dolores possimus delectus perferendis beatae repellat saepe vitae sint.</p>
-        </main>
-        <div class="about">
-            <h1>About</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit aut necessitatibus veniam et distinctio explicabo accusamus tempore eos est, nesciunt ducimus id velit qui vero totam eligendi. Maiores, incidunt qui?</p>
+        <div style="overflow: auto;">
+            <div class="menu">
+                <a href="#">Paris</a>
+                <a href="#">London</a>
+                <a href="#">Los Angeles</a>
+                <a href="#">Canada</a>
+                <a href="#">Tokyo</a>
+            </div>
+            <div class="main">
+                <h1>Paris</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nisi similique, tempore iure labore inventore tempora consequatur cum cupiditate eum quo vel quia adipisci ad quas, velit qui doloremque quam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, dolores voluptate velit iste porro commodi numquam fuga. Dolorum velit incidunt, quis tempore laboriosam commodi sapiente culpa inventore error dicta eius. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est placeat corporis reprehenderit, eaque laboriosam veritatis labore. Eveniet quasi, velit ipsam veniam dolores possimus delectus perferendis beatae repellat saepe vitae sint.</p>
+            </div>
+            <div class="about">
+                <h1>About</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit aut necessitatibus veniam et distinctio explicabo accusamus tempore eos est, nesciunt ducimus id velit qui vero totam eligendi. Maiores, incidunt qui?</p>
+            </div>
         </div>
-    </section>
-        <footer class="footer">
+        <div class="footer">
             <h1>Footer</h1>
-        </footer>
+        </div>
     </body>
 </html>

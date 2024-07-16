@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Responsive Web Design</title>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="HTML, course, examples">
+        <meta name="description" content="Examples for HTML course">
+        <meta name="author" content="arezoo">
+        <meta http-equiv="refresh" content="30">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="images/img-favicon (1).ico">
+    </head>
+    <body>
+        <h1>HTML Responsive Web Design</h1>
+        <p>A responsive web design will automatically adjust for different screen sizes and viewports.
+        </p>
+        <hr>
+        <h1>Responsive Images</h1>
+        <p>Responsive images are images that scale nicely to fit any browser size.</p>
+        <img src="images/img-html.png" alt="html image" width="60%" style="margin-left: 20%;"><!--the CSS width property is set to 60%, the image will be responsive and scale up and down-->
+        <hr>
+        <h1>Show Different Images Depending on Browser Width</h1>
+        <p>The HTML picture element allows you to define different images for different browser window sizes.
+        Resize the browser window to see how the image below changes depending on the width</p>
+        <picture>
+            <source style="width: 100%;" srcset="images/img-computer.png" media="(max-width:700px)">
+            <source srcset="images/img-computer2.png" media="(max-width:1500px)">
+            <source srcset="images/img-html.png">
+            <img src="images/img-desk.png" alt="img-desk" style="width:auto;">
+        </picture>
+        <hr>
+        <h1 style="font-size: 5vw;">Responsive Text Size</h1>
+        <p style="font-size: 4vw;">Resize the browser window to see how this text size scales.</p>
+        <hr>
+        <h1>Media Queries</h1>
+        <p>In addition to resize text and images, it is also common to use media queries in responsive web pages.
+        With media queries you can define completely different styles for different browser sizes. you can click the links below to see examples.</p>
+        <h3>Responsive Web Page - Example 1</h3>
+        <p>Resize the browser window to see the changes.</p>
+        <a href="responsive-ex1.html">Example1</a><br>
+        <iframe src="responsive-ex1.html" frameborder="10" width="80%" height="auto"></iframe><br>
+        <h3>Responsive Web Page - Example 2</h3>
+        <p>Resize the browser window to see the changes.</p>
+        <a href="responsive-ex2.html">Example2</a><br>
+        <iframe src="responsive-ex2.html" frameborder="10" width="80%"></iframe>
+    </body>
+</html>

@@ -24,8 +24,8 @@
         <p>An image map is an image with clickable areas. The areas are defined with one or more area tags. Click on computer screen or espresso to see the example</p>
         <img src="images/img-desk.png" alt="desk image" style="width: 420px;" usemap="#workm">
         <map name="workm">
-            <area shape="rect" coords="120,120,310,250" href="computer.html" alt="computer">
-            <area shape="circle" coords="360,140,50" href="coffee.html" alt="coffee">
+            <area shape="rect" coords="120,120,310,250" href="computer.html" alt="computer" onclick="alcomputer()">
+            <area shape="circle" coords="360,140,50" href="coffee.html" alt="coffee" onclick="alcoffee()">
         </map>
         <hr>
         <h1>HTML Background Images</h1>
@@ -45,6 +45,15 @@
         <h1>Bookmark in HTML</h1>
         <p>Click link below to go to top of the page</p>
         <a href="#firstb">bookmark</a>
+        <script>
+            function alcomputer(){
+                alert("You clicked on computer");
+            }
+            function alcoffee(){
+                alert("You clicked on coffee");
+            }
+            
+        </script>
 
     </body>
 </html>

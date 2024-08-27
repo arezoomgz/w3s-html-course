@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML Video and Audio</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, course, examples">
+    <meta name="description" content="Examples for HTML course">
+    <meta name="author" content="arezoo">
+    <meta http-equiv="refresh" content="30">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/img-favicon (1).ico">
+</head>
+<body>
+    <h1>HTML Video</h1>
+    <p>To show a video in HTML, use the video element.</p>
+    <video controls>
+        <source src="video/bear.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <hr>
+    <h1>Video Muted</h1>
+    <p>Add muted to let your video play muted.</p>
+    <video controls muted>
+        <source src="video/bear.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <hr>
+    <h1>Video Example</h1>
+    <p>There are also DOM events that can notify you when a video begins to play, is paused, etc.</p>
+    <br>
+    <div style="text-align: left;">
+        <button onclick="playPause()">play/pause</button>
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button>
+        <br><br>
+        <video id="video1" width="420" controls>
+        <source src="video/bear.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+    </div>
+    <hr>
+    <h1>HTML Audio</h1>
+    <p>The HTML audio element is used to play an audio file on a web page.</p>
+    <audio controls>
+        <source src="audio/W(1).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <hr>
+    <h1>Audio Muted</h1>
+    <p>Add muted to let your audio file play muted.</p>
+    <audio controls muted>
+        <source src="audio/W(1).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <script>
+        var myVideo = document.getElementById("video1");
+        function playPause(){
+            if (myVideo.paused){
+                myVideo.play();
+            }
+            else{
+                myVideo.pause();
+            }
+        }
+        function makeBig(){
+            myVideo.width="540";
+        }
+        function makeSmall(){
+            myVideo.width="320";
+        }
+        function makeNormal(){
+            myVideo.width="420"
+        }
+    </script>
+    
+</body>
+</html>
